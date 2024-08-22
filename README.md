@@ -1,50 +1,41 @@
-# React + TypeScript + Vite
+# Proyek React TypeScript Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Selamat datang di proyek React TypeScript Vite! Proyek ini adalah aplikasi frontend modern yang dibangun dengan React, TypeScript, dan Vite untuk pengalaman pengembangan yang cepat.
 
-Currently, two official plugins are available:
+## Prasyarat
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Pastikan Anda sudah menginstal hal berikut di mesin Anda:
 
-## Expanding the ESLint configuration
+- [Node.js](https://nodejs.org/) (>=14.0.0)
+- [npm](https://www.npmjs.com/) atau [Yarn](https://classic.yarnpkg.com/)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Memulai
 
-- Configure the top-level `parserOptions` property like this:
+Ikuti langkah-langkah berikut untuk menjalankan proyek secara lokal.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### 1. Clone Repositori
+
+```bash
+git clone https://github.com/fahmiitmamul/test-jogja-camp.git
+cd test-jogja-camp
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### 2. Install Dependensi
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Instal dependensi proyek menggunakan npm atau Yarn.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+pnpm install
+# atau
+yarn install
+```
+
+### 3. Jalankan Server Pengembangan
+
+Instal dependensi proyek menggunakan npm atau Yarn.
+
+```bash
+pnpm run dev
+# atau
+yarn run dev
 ```
