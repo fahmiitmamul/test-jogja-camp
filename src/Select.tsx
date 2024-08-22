@@ -120,14 +120,14 @@ const SelectComponent: React.FC = () => {
   }, [districtId, villageId, fetchVillage]);
 
   return (
-    <div className="max-w-5xl mx-auto my-5 w-full">
+    <div className="max-w-5xl mx-auto my-5 w-full px-10">
       <div className="grid gap-4 mx-10">
         <div className="flex w-full">
           <div className="text-3xl font-bold">Frontend.</div>
         </div>
       </div>
-      <div className="flex gap-5 mt-5">
-        <div className="flex flex-col w-[50%]">
+      <div className="flex flex-col md:flex-row gap-5 mt-5">
+        <div className="flex flex-col w-full md:w-[50%]">
           <div className="flex flex-col gap-5">
             <div className="text-md font-bold">Filter</div>
             <div className="flex">
